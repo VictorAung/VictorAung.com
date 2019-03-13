@@ -6,9 +6,9 @@
 
 body {
   font-size: 20px;
-  color: #212529;
+  color: #FFF;
   font-family: 'Montserrat', sans-serif;
-  background-color: #FFF;
+  background-color: #000;
 
 }
 
@@ -114,8 +114,8 @@ img::-moz-selection {
 #mainNav {
   position: absolute;
 
-  background-color: #000b30;
-  border-bottom: 1px solid white;
+  background-color: #000;
+  /* border-bottom: 1px solid white; */
 
   /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 }
@@ -178,7 +178,7 @@ img::-moz-selection {
     transition: transform 0.2s;
     transition: transform 0.2s, -webkit-transform 0.2s;
 
-    background-color: #000b30;
+    background-color: #000;
   }
   #mainNav.is-fixed .navbar-brand {
     color: #white;
@@ -196,14 +196,14 @@ img::-moz-selection {
     /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
-    color: #212529;
+    color: #000;
   }
 }
 
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #868e96;
+  background-color: #000;
   background-attachment: scroll;
   position: relative;
   background-size: cover;
@@ -434,7 +434,7 @@ footer .copyright {
 
 .btn-primary {
   background-color: #000b30;
-  border-color: #0085A1;
+  border-color: #64ffda;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -476,7 +476,8 @@ footer .copyright {
   display: inline-block;
   height: 3px;
   width : 20px;
-  background-color: #33FF00;
+  background-color: #64ffda;
+  /* background-color: #33FF00; terminal green*/
   animation: blink .5s 20 linear;
 
 
@@ -486,7 +487,7 @@ footer .copyright {
   width: 100%;
   height: 400px;
   display: block;
-  background-color: white;
+  background-color: #000b30;
 
 
 }
