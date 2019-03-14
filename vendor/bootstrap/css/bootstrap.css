@@ -4571,9 +4571,12 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-
+  background-color: #2b2b2b;
+  /* background-color: #000b30; */
   background-clip: border-box;
-  border: 2px solid #64ffda;
+  /* border: 2px solid #64ffda; */
+
+
   border-radius: 0.25rem;
 }
 
@@ -4602,7 +4605,7 @@ input[type="button"].btn-block {
 .card-title {
   font-size: 18pt;
   margin-bottom: 0.75rem;
-  margin-left: .5rem;
+  margin-left: 30px;
   margin-right: .5rem;
 }
 
@@ -4615,9 +4618,10 @@ input[type="button"].btn-block {
 }
 
 .card-text {
-  font-size: 14pt;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12pt;
   margin-top: 1rem;
-  margin-left: .5rem;
+  margin-left: 32px;
   margin-right: .5rem;
   padding-bottom: 40px
 }
