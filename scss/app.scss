@@ -1,4 +1,4 @@
-//sass --watch app.scss app.css
+//sass --watch scss/app.scss app.css
 
 $dark-navy: #000b30;
 $neon-blue: #64ffda;
@@ -97,6 +97,15 @@ blockquote {
 
 .margin {
   margin-bottom: 45px;
+}
+
+.contactContainer {
+    display: inline-block;
+  
+    padding-left: 30px;
+    padding-right: 30px;
+    
+
 }
 
 ::selection {
@@ -647,7 +656,7 @@ $black: #000000;
       
   
     border-radius: 8px;
-    box-shadow: 0 0px 5px 1px #64ffda;
+    box-shadow: 0 0px 5px 1px #ef1f9b;
     overflow: hidden;
     top: 0;
     transition: all 0.25s;
@@ -658,7 +667,7 @@ $black: #000000;
 
     &:hover {
       top: -15px;
-      box-shadow: 0 5px 50px 3px #64ffda;
+      box-shadow: 0 5px 50px 3px #ef1f9b;
     }
       
     &::before {
@@ -716,7 +725,7 @@ $black: #000000;
     background-color: #000; 
    /* border: 2px solid #64ffda; */
       border-radius: 8px;
-    box-shadow: 0 0px 5px 1px red;
+    box-shadow: 0 0px 5px 1px #1a16ff;
     overflow: hidden;
     top: 0;
     transition: all 0.25s;
@@ -727,7 +736,7 @@ $black: #000000;
 
     &:hover {
       top: -15px;
-      box-shadow: 0 5px 50px 3px red;
+      box-shadow: 0 5px 50px 3px #1a16ff;
     }
       
     &::before {
