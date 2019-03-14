@@ -164,7 +164,12 @@
   line-height: 2em;
   position: relative;
   vertical-align: middle;
-  width: 2.5em; }
+  width: 2em; 
+  border-radius: 50%;
+  box-shadow: 0 0px 5px 2px #64ffda;
+  background-color: #000b30;
+}
+ 
 
 .fa-stack-1x,
 .fa-stack-2x {
