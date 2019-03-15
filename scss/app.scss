@@ -45,6 +45,18 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+a.cardlink {
+    color: white;
+     text-decoration: none;
+}
+
+a.cardlink:hover { 
+    color: white;
+    text-decoration: none;
+
+}
+
+
 blockquote {
   font-style: italic;
   color: #868e96;
@@ -226,6 +238,7 @@ header.masthead {
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
+    
   padding: 100px 0 50px;
   color: white;
 }
@@ -266,6 +279,7 @@ header.masthead .site-heading .subheading {
   display: block;
   margin: 10px 0 0;
   font: 40 12pt/1.8 Lato, sans-serif;
+    
   color: #FFFFFF;
 }
 
@@ -455,7 +469,7 @@ footer .copyright {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-primary {
@@ -543,6 +557,7 @@ footer .copyright {
   top: -400px;
   height: 100%;
   width: 100%;
+    background-color: black;
   object-fit: contain;
 }
 
@@ -565,6 +580,25 @@ $light-blue: #3498db;
 $black: #000000;
 
 
+.hoverimgcontainer {
+    width: 500px;
+    height: 600px;
+    outline: solid 10px red;
+   
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        height: 15%;
+        width: 25%;
+    }
+}
+
+.ourlyimg {
+        margin-left: auto;
+        margin-right: auto;
+        height: 10px;
+        width: 25%;
+    }
 
 .hovercard {
     position: relative;
@@ -582,7 +616,7 @@ $black: #000000;
       
   
     border-radius: 8px;
-    box-shadow: 0 0px 5px 1px orange;
+   // box-shadow: 0 0px 5px 1px $neon-blue;
     overflow: hidden;
     top: 0;
     transition: all 0.25s;
@@ -593,7 +627,7 @@ $black: #000000;
 
     &:hover {
       top: -15px;
-      box-shadow: 0 5px 50px 3px orange;
+      box-shadow: 0 5px 50px 3px $neon-blue;
     }
       
     &::before {
@@ -778,10 +812,76 @@ $black: #000000;
        margin-right: 0;
        margin-left: 0;
     }
-    
-    
-  
 }
+
+.hovercard4 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+//    background-color: #2b2b2b;
+    background-color: #000; 
+   /* border: 2px solid #64ffda; */
+      border-radius: 8px;
+    box-shadow: 0 0px 5px 1px #93BCFF;
+    overflow: hidden;
+    top: 0;
+    transition: all 0.25s;
+
+    &:nth-child(2) {
+      margin: 0 50px;
+    }
+
+    &:hover {
+      top: -15px;
+      box-shadow: 0 5px 50px 3px #93BCFF;
+    }
+      
+    &::before {
+    transform: scale3d(0, 1, 1);
+    transform-origin: left top;
+    border-top: 1px solid #acacac;
+    border-bottom: 1px solid #acacac;
+  }
+
+  &::after {
+    transform: scale3d(1, 0, 1);
+    transform-origin: right top;
+    border-right: 1px solid #acacac;
+    border-left: 1px solid #acacac;
+  }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+
+    img {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+
+    a {
+      font-weight: 500;
+      text-decoration: none;
+      color: $light-blue;
+    }
+      
+    hr {
+       margin-right: 0;
+       margin-left: 0;
+    }
+}
+
+
 
 
 

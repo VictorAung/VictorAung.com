@@ -35,6 +35,16 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+a.cardlink {
+  color: white;
+  text-decoration: none;
+}
+
+a.cardlink:hover {
+  color: white;
+  text-decoration: none;
+}
+
 blockquote {
   font-style: italic;
   color: #868e96;
@@ -431,7 +441,7 @@ footer .copyright {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-primary {
@@ -507,6 +517,7 @@ footer .copyright {
   top: -400px;
   height: 100%;
   width: 100%;
+  background-color: black;
   object-fit: contain;
 }
 
@@ -522,6 +533,25 @@ footer .copyright {
   width: 100%;
 }
 
+.hoverimgcontainer {
+  width: 500px;
+  height: 600px;
+  outline: solid 10px red;
+}
+.hoverimgcontainer img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 15%;
+  width: 25%;
+}
+
+.ourlyimg {
+  margin-left: auto;
+  margin-right: auto;
+  height: 10px;
+  width: 25%;
+}
+
 .hovercard {
   position: relative;
   display: -ms-flexbox;
@@ -533,7 +563,6 @@ footer .copyright {
   background-color: #000414;
   /* border: 2px solid #64ffda; */
   border-radius: 8px;
-  box-shadow: 0 0px 5px 1px orange;
   overflow: hidden;
   top: 0;
   transition: all 0.25s;
@@ -543,7 +572,7 @@ footer .copyright {
 }
 .hovercard:hover {
   top: -15px;
-  box-shadow: 0 5px 50px 3px orange;
+  box-shadow: 0 5px 50px 3px #64ffda;
 }
 .hovercard::before {
   transform: scale3d(0, 1, 1);
@@ -680,6 +709,60 @@ footer .copyright {
   color: #3498db;
 }
 .hovercard3 hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.hovercard4 {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #000;
+  /* border: 2px solid #64ffda; */
+  border-radius: 8px;
+  box-shadow: 0 0px 5px 1px #93BCFF;
+  overflow: hidden;
+  top: 0;
+  transition: all 0.25s;
+}
+.hovercard4:nth-child(2) {
+  margin: 0 50px;
+}
+.hovercard4:hover {
+  top: -15px;
+  box-shadow: 0 5px 50px 3px #93BCFF;
+}
+.hovercard4::before {
+  transform: scale3d(0, 1, 1);
+  transform-origin: left top;
+  border-top: 1px solid #acacac;
+  border-bottom: 1px solid #acacac;
+}
+.hovercard4::after {
+  transform: scale3d(1, 0, 1);
+  transform-origin: right top;
+  border-right: 1px solid #acacac;
+  border-left: 1px solid #acacac;
+}
+.hovercard4:hover::before, .hovercard4:hover::after, .hovercard4:focus::before, .hovercard4:focus::after {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
+.hovercard4 img {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.hovercard4 a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+}
+.hovercard4 hr {
   margin-right: 0;
   margin-left: 0;
 }
