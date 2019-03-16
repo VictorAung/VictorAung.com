@@ -175,8 +175,8 @@ img::-moz-selection {
     color: #fff;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-//    color: rgba(255, 255, 255, 0.8);
-    color: rgba(100, 255, 218, 0.8);
+    color: rgba(255, 255, 255, 0.8); 
+//    color: rgba(100, 255, 218, 0.8);
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
@@ -213,7 +213,8 @@ img::-moz-selection {
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
 //    color: #0085A1;
-       color: rgba(100, 255, 218, 0.8);
+      color: rgba(255, 255, 255, 0.8);
+//       color: rgba(100, 255, 218, 0.8);
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: white;
@@ -237,7 +238,34 @@ header.masthead {
   background-attachment: scroll;
   position: relative;
   background-size: cover;
+//  border: solid red 2px;
 
+}
+
+.mastContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: solid blue 2px;
+}
+
+.aboutPhoto {
+  display: block;
+  max-height: 10%;
+  background-image: url('./img/elephant.jpg'); 
+  
+
+  background-repeat: no-repeat;
+}
+
+header.mastheadPost {
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  background-image: url("img/elephant.jpg");
+  background-color: #000;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
 }
 
 
@@ -504,11 +532,9 @@ footer .copyright {
   font-size : 42px;
   font-weight: bold;
   position : relative;
-
-
-
-
 }
+
+
 @media only screen and (max-width: 992px) {
   .text {
     font-size: 28px;
