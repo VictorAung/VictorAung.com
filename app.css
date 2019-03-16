@@ -129,11 +129,12 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   font-weight: 800;
+  font-size: 18pt;
   color: white;
 }
 
 #mainNav .navbar-toggler {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
@@ -155,7 +156,7 @@ img::-moz-selection {
   }
 
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(100, 255, 218, 0.8);
   }
 
   #mainNav .navbar-nav > li.nav-item > a {
@@ -164,7 +165,7 @@ img::-moz-selection {
   }
 
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(100, 255, 218, 0.8);
   }
 }
 @media only screen and (min-width: 992px) {
@@ -180,7 +181,7 @@ img::-moz-selection {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -67px;
+    top: -72px;
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
@@ -193,7 +194,7 @@ img::-moz-selection {
   }
 
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
+    color: rgba(100, 255, 218, 0.8);
   }
 
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
@@ -201,7 +202,7 @@ img::-moz-selection {
   }
 
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: white;
+    color: rgba(100, 255, 218, 0.8);
   }
 
   #mainNav.is-visible {
@@ -560,9 +561,9 @@ footer .copyright {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #000414;
+  background-color: #18181e;
   /* border: 2px solid #64ffda; */
-  border-radius: 8px;
+  border-radius: 20px;
   overflow: hidden;
   top: 0;
   transition: all 0.25s;
